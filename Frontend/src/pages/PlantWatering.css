@@ -1,0 +1,98 @@
+/* PlantWatering.css */
+
+.calendar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.headingwater {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.month-container {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.week-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.day {
+  font-family: 'Helvetica', sans-serif;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 40px;
+  position: relative;
+}
+
+.day:first-child {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.day div:last-child {
+  font-size: 2em;
+}
+
+.day.current-day {
+  background-color: #18623cb9;
+  color: #fff;
+}
+
+.buttonwater {
+  margin: 0 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonwater button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.buttonwater:hover {
+  background-color: #ffffff;
+}
+
+.checkbox-container {
+  position: absolute;
+  bottom: 0; /* Adjust the value to move the checkboxes below */
+  left: 35%;
+  transform: translateY(24%);
+}
+
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #3498db;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #3498db;
+}
+

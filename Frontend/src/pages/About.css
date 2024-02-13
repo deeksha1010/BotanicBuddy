@@ -1,0 +1,97 @@
+.back {
+  background-color: #ffffff; /* Solid green color */
+  height: 100%; /* Adjust the height as needed */
+  width: 100%; /* Adjust the width as needed */
+  position: fixed; /* or use "absolute" depending on your layout needs */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place it behind other elements */
+}
+.plant-image-container {
+  position: absolute;
+  top: 51%;
+  right: 150px; /* Adjust the right distance as needed */
+  transform: translateY(-50%); /* Adjust padding as needed */
+}
+
+.plant-image-container img {
+  width: 140%; /* Set the image width to 100% of its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.plant-image {
+  width: 500px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.logo-container2 {
+  margin: 10px;
+  position: absolute;
+  top: 10px; /* Adjust the top distance as needed */
+  left: 10px; /* Adjust the left distance as needed */
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.floathead {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 24px;
+  color: #345352;
+  margin-top: 150px; /* Adjust the value as needed */
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 30%;
+  line-height: 1.5;
+  margin-left: 25px; /* Adjust the margin-left value as needed */
+  position: absolute; /* or use "absolute" depending on your layout needs */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 2px;
+}
+
+.button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+}
+
+button {
+  margin-left: 10px;
+  padding: 16px 24px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plant-info-btn,
+.feedback-btn {
+  background: none;
+}
+
+/* Remove underline for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}

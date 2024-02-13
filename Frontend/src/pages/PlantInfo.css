@@ -1,0 +1,148 @@
+.plant-info-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  animation: slideFromTop 1s ease; /* Apply the animation */
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.hangplant {
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  width: 450px;
+  height: 450px;
+  background: url('hangplant.png') center center/cover;
+  border-radius: 50%;
+  animation: slideFromTop 1s ease; /* Apply the animation */
+}
+
+.standplant {
+  position: fixed;
+  bottom: -73px;
+  left: -220px;
+  width: 700px;
+  height: 700px;
+  background: url('standplant.png') center center/contain;
+  animation: slideFromBottom 1s ease; /* Apply the animation */
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo-container2{
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.logo {
+  width: 190px;
+  height: 125px;
+}
+/* Search container styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search input styles */
+.search-input {
+  flex: 1;
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Search input focus styles */
+.search-input:focus {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Magnifying glass icon */
+.search-icon {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+/* Plant cards container styles */
+.plant-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center-align and distribute space around cards */
+}
+
+/* Plant card styles */
+.plant-card {
+  width: calc(25% - 30px); /* Adjusted width calculation */
+  margin: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Added transition for background */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for glassmorphism effect */
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Border for glassmorphism effect */
+}
+
+/* Plant card expanded styles */
+.plant-card.expanded {
+  transform: scale(1.2); /* Make the clicked card bigger */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for plant cards */
+.plant-card:not(.expanded):hover {
+  transform: scale(0.95);
+}
+
+/* Plant name styles */
+.plant-card h3 {
+  font-family: 'Helvetica', sans-serif;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Plant description styles */
+.plant-card p {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #666;
+  display: none;
+}
+
+/* Plant description visible styles for expanded card */
+.plant-card.expanded p {
+  display: block;
+}
+
+/* Additional styles for the heading */
+.plantinfohead {
+  font-family: 'Helvetica', sans-serif;
+  color: #032b0e;
+  font-size: 32px;
+  margin-bottom: 30px;
+}

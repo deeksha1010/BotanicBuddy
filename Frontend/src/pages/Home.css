@@ -1,0 +1,124 @@
+
+.logo-container {
+  margin: 10px; 
+}
+
+.logo {
+  width: 100px; 
+  height: auto; 
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #fff; /* White background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  background: url('img.jpg') center/cover;
+  margin-top: 0; /* Replace 'your-background-image.jpg' with the actual image URL */
+}
+
+.home-page {
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Helvetica', sans-serif;
+  color: #032b0e;
+  font-size: 50px; /* Adjusted font size for heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+.heading1{
+  font-family: 'Helvetica', sans-serif;
+  color: #032b0e;
+  font-size: 36px; /* Adjusted font size for heading */
+  margin-bottom: 30px;
+  
+}
+
+.login-form {
+  background-color: rgba(233, 243, 234, 0.8); /* Slightly translucent white background */
+  padding: 50px;
+  border-radius: 10px;
+  width: 80%; /* Adjusted width for a larger size */
+  max-width: 400px; /* Set a maximum width */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.input-field {
+  margin-bottom: 15px;
+  text-align: right; /* Right-align input fields */
+}
+
+label {
+  font-family: 'Helvetica', sans-serif;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+  font-size: 14px; /* Adjusted font size for labels */
+  text-align: left; /* Reset text-align for labels to left */
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #99a3a4;
+  border-radius: 7px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+input:focus {
+  font-family: 'Helvetica', sans-serif;
+  outline: none;
+  border-color: #47bc23;
+}
+
+.link-to-about {
+  font-family: 'Helvetica', sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.link-to-about:hover {
+  background-color: #45a049;
+}
+
+.create-account-link {
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  color: #333; /* Dark text color */
+  font-size: 14px; /* Smaller font size */
+}
+
+.create-account-link a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.create-account-link a:hover {
+  color: #45a049;
+}

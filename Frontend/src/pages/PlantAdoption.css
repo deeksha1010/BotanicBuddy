@@ -1,0 +1,92 @@
+/* Add your CSS styles here */
+#body1 {
+  font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #345352;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 20px; /* Adjusted top position */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1500px; /* Adjusted maximum width */
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .card {
+    width: 450px; /* Adjusted card width */
+    margin-right: 30px; /* Increased margin */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+    overflow: hidden;
+    border-radius: 15px; /* Increased border radius */
+    opacity: 0.7; /* Adjusted opacity */
+  }
+  
+  .card.active {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-button {
+    display: block;
+    width: 45%; /* Adjusted button width */
+    padding: 12px; /* Increased padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px; /* Increased padding */
+    margin-top: -30px; /* Adjusted margin top */
+    font-size: 28px; /* Increased font size */
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    background: none;
+    color: #4CAF50;
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
